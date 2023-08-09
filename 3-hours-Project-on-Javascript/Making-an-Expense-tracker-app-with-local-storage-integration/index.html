@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+    <header class="text-center py-3">
+        <h1>Expense tracker App</h1>
+    </header>
+    <section class="d-flex align-items-center justify-content-center mt-4">
+        <form id="my-form" class="p-4 border rounded">
+            <h2 class="mb-3">Add Expenses</h2>
+            <div id="msg" class="mb-3"></div>
+            <div class="mb-3">
+                <label for="expense" class="form-label">Enter Expense Amount:</label>
+                <input type="text" id="expense" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Enter Item Description:</label>
+                <input type="text" id="description" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="category" class="form-label">Choose a category:</label>
+                <select id="category" name="category" class="form-select">
+                    <option value="" selected disabled>Choose the category</option>
+                    <option value="clothing and apparel">Clothing and Apparel</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="home and kitchen">Home and Kitchen</option>
+                    <option value="beauty and personal care">Beauty and Personal Care</option>
+                    <option value="books and literature">Books and Literature</option>
+                    <option value="health and wellness">Health and Wellness</option>
+                    <option value="sports and outdoors">Sports and Outdoors</option>
+                    <option value="toys and games">Toys and Games</option>
+                    <option value="automotive and tools">Automotive and Tools</option>
+                    <option value="jewelry and accessories">Jewelry and Accessories</option>
+                    <option value="furniture and home decor">Furniture and Home Decor</option>
+                    <option value="food and groceries">Food and Groceries</option>
+                    <option value="pet supplies">Pet Supplies</option>
+                    <option value="baby and kids">Baby and Kids</option>
+                    <option value="music and movies">Music and Movies</option>
+                    <option value="office supplies">Office Supplies</option>
+                    <option value="fitness and exercise">Fitness and Exercise</option>
+                    <option value="arts and crafts">Arts and Crafts</option>
+                    <option value="travel and luggage">Travel and Luggage</option>
+                    <option value="shoes and footwear">Shoes and Footwear</option>
+                </select>
+            </div>
+            <input id="btn" class="btn btn-primary" type="submit" value="Add Expense">
+
+            <div class="container mt-4 text-center">
+                <ul id="expense-list" class="list-group"></ul>
+            </div>
+
+        </form>
+    </section>
+
+    <script src="dom.js"></script>
+</body>
+</html>
