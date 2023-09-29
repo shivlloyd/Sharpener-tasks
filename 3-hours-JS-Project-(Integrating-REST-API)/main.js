@@ -1,4 +1,4 @@
-const crudAPIkey = 'https://crudcrud.com/api/b9cfef3cf9a748efa6f3365193da05b0/itemData';
+const crudAPIkey = 'https://crudcrud.com/api/d0dfa5ed97ff493fa606e237bc87f6d3/itemData';
 
 //change of events when takes input
 
@@ -73,7 +73,7 @@ btn.addEventListener('click', (e) => {
 
         //storing items as an object on crud-crud using axios
         let allItems = {
-            price: `₹${itemPrice.value}`,
+            price: itemPrice.value,
             name: itemName.value,
             category: itemCategory.value
         };
