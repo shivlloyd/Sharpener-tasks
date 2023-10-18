@@ -1,0 +1,40 @@
+.form {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  text-align: left;
+  border: 1px solid white;
+  border-radius: 1rem;
+  width: 50rem;
+  max-width: 100%;
+}
+
+.label {
+  font-weight: bold;
+  margin: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 50rem;
+  max-width: 100%;
+}
+
+button {
+  color: white;
+  background-color: rgb(88, 10, 85);
+  font-weight: bold;
+  border: 1px solid rgb(88, 10, 85);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+}

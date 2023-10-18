@@ -1,0 +1,12 @@
+ul {
+  list-style: none;
+  padding: 1rem;
+  background-color: #fff;
+  flex-wrap: wrap;
+  margin: 1rem;
+  text-align: left;
+  border: 1px solid white;
+  border-radius: 1rem;
+  width: 50rem;
+  max-width: 100%;
+}
