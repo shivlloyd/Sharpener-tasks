@@ -1,11 +1,12 @@
 import React from "react";
+import './Orders.css';
 
 const Orders = ({ orderList, deleteOrder }) => {
   function clickHandler(orderId) {
     deleteOrder(orderId);
   }
   return (
-    <div>
+    <div className="orders">
       <h2>Orders</h2>
       <h3>Table 1</h3>
       {orderList.map((order) => {

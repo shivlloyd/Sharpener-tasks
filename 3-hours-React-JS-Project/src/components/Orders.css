@@ -1,0 +1,36 @@
+.orders {
+  border: 2px solid rgb(255, 109, 109);
+  border-radius: 1rem;
+  max-width: 50%;
+  width: 40rem;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin: 0 auto;
+}
+
+h3 {
+  background-color: rgb(212, 212, 212);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+li {
+  list-style: none;
+  margin: auto 1rem;
+  font-size: large;
+}
+
+button {
+  color: white;
+  border: 1px solid rgb(5, 4, 4);
+  border-radius: 0.5rem;
+  background-color: rgb(197, 15, 15);
+  width: 7rem;
+  padding: 0.5rem;
+  margin: 5px;
+}

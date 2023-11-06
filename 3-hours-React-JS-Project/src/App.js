@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import OrderForm from "./OrderForm";
-import Orders from "./Orders";
+import OrderForm from "./components/OrderForm";
+import Orders from "./components/Orders";
+import './App.css';
 
 function App() {
   const [orderList, setOrderList] = useState([]);
@@ -40,7 +41,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="main">
       <OrderForm addOrderList={addOrderList} />
       <Orders orderList={orderList} deleteOrder={deleteOrder} />
     </div>
