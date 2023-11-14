@@ -20,7 +20,19 @@ const CartProvider = (props) => {
     setItems(updatedItem);
   };
 
-  const removeItemFromCartHandler = (id) => {};
+  const removeItemFromCartHandler = (id) => {
+    let updatedItem = [...items];
+
+    const existingItem = updatedItem.find(
+      (cartItem) => cartItem.id === id);
+
+    if (existingItem.quantity > 1) {
+      existingItem.quantity = Number(existingItem.quantity) - 1;
+    } else {
+      updatedItem.pop(existingItem);
+    }
+    setItems(updatedItem);
+  };
 
   const cartContext = {
     items: items,
