@@ -1,11 +1,11 @@
 import HeaderCartButton from "./HeaderCartButton";
-import "./Header.css"
+import "./Header.css";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div className="header">
       <h1 className="logo">Medicine Store</h1>
-      <HeaderCartButton />
+      <HeaderCartButton showCartHandler={props.showCartHandler} />
     </div>
   );
 };

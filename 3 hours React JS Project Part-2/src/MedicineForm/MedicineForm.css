@@ -1,9 +1,9 @@
-div {
+.form-div {
   width: 300px;
   margin: 20px auto;
 }
 
-form {
+.form-submit {
   display: flex;
   flex-direction: column;
   border: 1px solid rgb(0, 81, 255);
@@ -11,12 +11,12 @@ form {
   padding: 1rem;
 }
 
-label {
+.form-label {
   margin-bottom: 5px;
   color: #333;
 }
 
-input {
+.form-input {
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ccc;

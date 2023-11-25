@@ -1,0 +1,45 @@
+.item-list {
+  text-align: center;
+  margin: 10px 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.list-heading {
+  list-style: none;
+  padding-right: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-items {
+  list-style: none;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+.add-button.out-of-stock {
+  background-color: #9c9c9c; /* Gray color for out of stock */
+  cursor: not-allowed;
+}
+
+.add-button:hover:not([disabled]) {
+  background-color: #45a049; /* Slightly darker shade on hover */
+}

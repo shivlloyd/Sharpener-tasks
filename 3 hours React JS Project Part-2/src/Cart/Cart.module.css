@@ -1,0 +1,96 @@
+.cart-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 20rem;
+  overflow: auto;
+}
+
+.cart-items li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-items li button {
+  font: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #068a06;
+  padding: 0.25rem 1rem;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.cart-items li .button--decrease {
+  background-color: #76837a;
+  color: white;
+}
+.cart-items li .button--decrease:hover {
+  background-color: rgb(18, 204, 211) 136, 77);
+  color: white;
+}
+
+.cart-items li .button--increase {
+  background-color: #068a32;
+  color: white;
+}
+
+.cart-items li button:hover,
+.cart-items li button:active {
+  background-color: #015a38;
+  border-color: #015a4e;
+  color: white;
+}
+
+.cart-items li:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+.cart-items li span {
+  font-weight: bold;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.actions {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #068a0d;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #0b5a01;
+  border-color: #015a2e;
+  color: white;
+}
+
+.actions .button--alt {
+  color: #418a06;
+}
+
+.actions .button {
+  background-color: #8a2b06;
+  color: white;
+}
