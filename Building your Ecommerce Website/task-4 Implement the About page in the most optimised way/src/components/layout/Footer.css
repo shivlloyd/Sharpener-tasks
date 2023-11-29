@@ -1,0 +1,40 @@
+footer {
+  display: flex;
+  margin-top: 40px;
+  padding: 20px;
+  background: #56ccf2;
+}
+
+footer .footer-title {
+  text-align: center;
+  color: white;
+  width: 50%;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+footer .footer-icons {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-icons ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.footer-icons li {
+  padding: 10px;
+  margin: 0px 20px;
+}
+
+.footer-icons li:hover {
+  background: rgb(17, 206, 206);
+}
+
+.footer-icons img {
+  width: 30px;
+}

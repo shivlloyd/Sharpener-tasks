@@ -1,0 +1,80 @@
+.header {
+  display: flex;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 200;
+  justify-content: center;
+  list-style-type: none;
+  border-bottom: 0.1rem solid white;
+  position: fixed;
+  top: 0%;
+  background: black;
+  width: 100%;
+  z-index: 1;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar h1 {
+  padding: 40px;
+  font-size: 100px;
+  color: white;
+  background-color: #777;
+  width: 100%;
+  text-align: center;
+}
+
+.links {
+  margin-right: 60px;
+}
+
+.cart-holder {
+  border: 2px solid #56ccf2;
+  border-radius: 7px;
+  padding: 2px 10px;
+  position: absolute;
+  right: 2%;
+}
+.cart-number {
+  position: absolute;
+  color: #56ccf2;
+  font-size: 20px;
+  top: -10px;
+  right: -15px;
+}
+
+.name {
+  font-size: 20px;
+  text-transform: uppercase;
+  font: bold;
+  color: aliceblue;
+  margin-left: 5%;
+}
+
+.links {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 5px;
+  font: bold;
+  color: aliceblue;
+}
+
+.links a:hover {
+  color: blue;
+}
