@@ -1,0 +1,93 @@
+#cart {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  height: 95%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  width: 30rem;
+  border: 1px solid rgb(177, 103, 103);
+  padding: 20px 30px;
+}
+
+#cart h2 {
+  margin: 20px 0px;
+  padding: 0;
+  font-family: "Metal Mania";
+  text-align: center;
+  font-size: 30px;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.cart-item {
+  margin: 10px 28px 0 0;
+  padding: 0 0 10px 0;
+  width: 45%;
+
+  border-bottom: 1px solid black;
+}
+
+.cart-price {
+  margin: 10px 28px 0 0;
+  padding: 0 0 10px 0;
+  width: 20%;
+  border-bottom: 1px solid black;
+}
+
+.cart-quantity {
+  margin: 10px 28px 0 0;
+  padding: 0 0 10px 0;
+  width: 35%;
+  border-bottom: 1px solid black;
+}
+
+.cancel {
+  position: absolute;
+  cursor: pointer;
+  color: rgb(121, 117, 117);
+  top: 0;
+  right: 0;
+  margin: 20px;
+  background: none;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid rgb(121, 117, 117);
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.cart-total {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.1rem;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.total-title,
+.total-value {
+  margin-right: 10px;
+}
+
+.purchase-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+  background: #56ccf2;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8%;
+  padding: 12px;
+  cursor: pointer;
+}
