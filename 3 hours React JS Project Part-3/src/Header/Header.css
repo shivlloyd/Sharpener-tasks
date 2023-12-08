@@ -1,0 +1,13 @@
+/* Header.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #000000;
+}
+
+.logo {
+  margin: 0;
+}

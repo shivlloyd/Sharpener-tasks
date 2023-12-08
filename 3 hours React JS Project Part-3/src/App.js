@@ -1,0 +1,29 @@
+import { useState } from "react";
+import Cart from "./Cart/Cart";
+import Header from "./Header/Header.js";
+import ShoeForm from "./ShoeForm/ShoeForm.js";
+import CartProvider from "./Store/CartProvider";
+
+import "./App.css";
+
+function App() {
+  const [showCart, setShowCart] = useState(false);
+
+  const showCartHandler = () => {
+    setShowCart(true);
+  };
+
+  const hideCartHandler = () => {
+    setShowCart(false);
+  };
+
+  return (
+    <CartProvider>
+      {showCart && <Cart hideCartHandler={hideCartHandler} />}
+      <Header showCartHandler={showCartHandler} />
+      <ShoeForm />
+    </CartProvider>
+  );
+}
+
+export default App;

@@ -1,0 +1,14 @@
+.cart-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.cart-icon {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
