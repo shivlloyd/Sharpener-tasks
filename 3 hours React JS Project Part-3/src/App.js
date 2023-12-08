@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Cart from "./Cart/Cart";
 import Header from "./Header/Header.js";
-import ShoeForm from "./ShoeForm/ShoeForm.js";
+import TshirtForm from "./TshirtForm/TshirtForm.js";
 import CartProvider from "./Store/CartProvider";
 
 import "./App.css";
@@ -21,7 +21,7 @@ function App() {
     <CartProvider>
       {showCart && <Cart hideCartHandler={hideCartHandler} />}
       <Header showCartHandler={showCartHandler} />
-      <ShoeForm />
+      <TshirtForm />
     </CartProvider>
   );
 }

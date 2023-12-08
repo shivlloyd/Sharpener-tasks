@@ -2,10 +2,10 @@ import { useContext, useRef } from "react";
 
 import CartContext from "../Store/cart-context";
 
-import "./ShoeForm.css";
+import "./TshirtForm.css";
 
-const ShoeForm = (props) => {
-  const shoeName = useRef();
+const TshirtForm = (props) => {
+  const tShirtName = useRef();
   const description = useRef();
   const price = useRef();
   const large = useRef();
@@ -14,17 +14,30 @@ const ShoeForm = (props) => {
 
   const cartCtx = useContext(CartContext);
 
+  const addItemInContext = (event) => {
+    event.preventDefault();
+
+    let item = {
+      tShirtName: tShirtName.current.value,
+      description: description.current.value,
+      price: price.current.value,
+      large: large.current.value,
+      medium: medium.current.value,
+      small: small.current.value,
+    };
+  };
+
   return (
     <div className="form-div">
       <form className="form-submit">
-        <label className="form-label" htmlFor="shoeName">
-          Shoe Name
+        <label className="form-label" htmlFor="tShirtName">
+          Tshirt Name
         </label>
         <input
           className="form-input"
-          id="shoeName"
+          id="tShirtName"
           type="text"
-          ref={shoeName}
+          ref={tShirtName}
         ></input>
 
         <label className="form-label" htmlFor="description">
@@ -47,8 +60,10 @@ const ShoeForm = (props) => {
           ref={price}
         ></input>
 
+        <h3>Size Quantity Available</h3>
+
         <label className="form-label" htmlFor="large">
-          L
+          Large
         </label>
         <input
           className="form-input"
@@ -58,7 +73,7 @@ const ShoeForm = (props) => {
         ></input>
 
         <label className="form-label" htmlFor="medium">
-          M
+          Medium
         </label>
         <input
           className="form-input"
@@ -68,7 +83,7 @@ const ShoeForm = (props) => {
         ></input>
 
         <label className="form-label" htmlFor="small">
-          S
+          Small
         </label>
         <input
           className="form-input"
@@ -85,4 +100,4 @@ const ShoeForm = (props) => {
   );
 };
 
-export default ShoeForm;
+export default TshirtForm;
