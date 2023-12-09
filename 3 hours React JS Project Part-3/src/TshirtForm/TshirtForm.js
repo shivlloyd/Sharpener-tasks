@@ -25,6 +25,8 @@ const TshirtForm = (props) => {
       medium: medium.current.value,
       small: small.current.value,
     };
+
+    cartCtx.addItem(item);
   };
 
   return (

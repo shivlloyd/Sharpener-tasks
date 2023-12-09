@@ -6,17 +6,9 @@ import CartContext from "../Store/cart-context";
 const Cart = (props) => {
   const cartCtx = useContext(CartContext);
 
-  const increaseItem = (item) => {
-    cartCtx.cartItems.forEach((items) => {
-      if (items.medicineName === item.medicineName) {
-        cartCtx.addCartItem(item);
-      }
-    });
-  };
-
-  const decreaseItem = (item) => {
-    cartCtx.cartItems.forEach((items) => {
-      if (items.medicineName === item.medicineName) {
+  const deleteItem = (item) => {
+    cartCtx.cartItems.forEach((itemss) => {
+      if (itemss.items.tShirtName === item.items.tShirtName) {
         cartCtx.removeCartItem(item);
       }
     });
@@ -25,22 +17,18 @@ const Cart = (props) => {
   const cartItems = (
     <ul className={classes["cart-items"]}>
       {cartCtx.cartItems.map((item) => (
-        <li key={item.medicineName}>
-          <span>{item.medicineName}</span>
-          <span>x{item.quantity}</span>
-          <span>${item.price}</span>
+        <li key={item.items.tShirtName}>
+          <span>{item.items.tShirtName}</span>
+          {Number(item.items.large) > 0 && <span>L{item.items.large}</span>}
+          {Number(item.items.medium) > 0 && <span>M{item.items.medium}</span>}
+          {Number(item.items.small) > 0 && <span>S{item.items.small}</span>}
+          <span>${item.items.price}</span>
           <div className="btnGroup">
             <button
               className={classes["button--decrease"]}
-              onClick={() => decreaseItem(item)}
+              onClick={() => deleteItem(item)}
             >
-              -
-            </button>
-            <button
-              className={classes["button--increase"]}
-              onClick={() => increaseItem(item)}
-            >
-              +
+              Remove
             </button>
           </div>
         </li>
@@ -49,8 +37,13 @@ const Cart = (props) => {
   );
 
   let totalPrice = 0;
+  let sum = 0;
   cartCtx.cartItems.forEach((item) => {
-    totalPrice += Number(item.price) * Number(item.quantity);
+    sum =
+      Number(item.items.large) +
+      Number(item.items.medium) +
+      Number(item.items.small);
+    totalPrice += Number(item.items.price) * Number(sum);
     totalPrice = parseFloat(totalPrice.toFixed(2));
   });
 

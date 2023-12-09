@@ -2,6 +2,7 @@ import { useState } from "react";
 import Cart from "./Cart/Cart";
 import Header from "./Header/Header.js";
 import TshirtForm from "./TshirtForm/TshirtForm.js";
+import ItemList from "./itemList/ItemList.js";
 import CartProvider from "./Store/CartProvider";
 
 import "./App.css";
@@ -22,6 +23,7 @@ function App() {
       {showCart && <Cart hideCartHandler={hideCartHandler} />}
       <Header showCartHandler={showCartHandler} />
       <TshirtForm />
+      <ItemList />
     </CartProvider>
   );
 }
