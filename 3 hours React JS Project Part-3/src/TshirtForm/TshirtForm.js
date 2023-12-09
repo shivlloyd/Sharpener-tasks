@@ -33,7 +33,7 @@ const TshirtForm = (props) => {
     <div className="form-div">
       <form className="form-submit">
         <label className="form-label" htmlFor="tShirtName">
-          Tshirt Name
+          Shoe Name
         </label>
         <input
           className="form-input"
