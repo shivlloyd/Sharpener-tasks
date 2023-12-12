@@ -1,0 +1,15 @@
+.starting {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.profile {
+  display: flex;
+}
+button {
+  color: blue;
+  background-color: white;
+  border: none;
+}
