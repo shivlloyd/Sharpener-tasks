@@ -1,0 +1,24 @@
+.expenses-header {
+  margin-top: 20px;
+}
+
+.no-expenses {
+  text-align: center;
+}
+
+.expenses-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.expense-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.expense-field {
+  display: block;
+  margin-bottom: 5px;
+}
